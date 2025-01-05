@@ -1,0 +1,29 @@
+{% extends 'home.html' %}
+
+{% block heading_space %}
+    <div><h1>Signup</h1></div>
+    
+{% endblock heading_space %}
+
+{% block logout %}{% endblock logout %}
+
+{% block web_content %}
+
+<div class="auth_panel">
+
+
+    <form action="" method="POST">{% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" name="submit" id="submit-btn"></input>
+
+    </form>
+
+    <p id="error-msg">{{ form_error }}</p>
+
+    <a href="/login">login</a>
+
+</div>
+
+{% endblock web_content %}

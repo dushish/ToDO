@@ -1,0 +1,232 @@
+html * {
+    font-family: 'Rajdhani', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+  }
+  
+  .container {
+    margin: 70px auto;
+  }
+  
+  .task_display {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 60%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .list {
+    overflow-y: scroll;
+    max-height: 400px;
+    margin: 15px 0;
+    padding: 10px;
+  }
+  
+  .list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .list::-webkit-scrollbar-thumb {
+    background: #e59eaf;
+    border-radius: 10px;
+  }
+  
+  .add_btn_div {
+    margin: 30px auto;
+    max-width: 120px;
+    text-align: center;
+  }
+  
+  .delete_task {
+    visibility: hidden;
+    color: #e94e77;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .card:hover .delete_task {
+    visibility: visible;
+    color: #d32f2f;
+  }
+  
+  .card:hover {
+    border: 1px solid #e59eaf;
+    background-color: #fef6f9;
+    transition: all 0.3s ease;
+  }
+  
+  .mark_task {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    border: none;
+    background-color: #e59eaf;
+    cursor: pointer;
+    visibility: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover .mark_task {
+    visibility: visible;
+    transform: scale(1.1);
+  }
+  
+  .desc {
+    margin: 0px 20px;
+    color: #555;
+  }
+  
+  .btn {
+    font-size: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #4a4a4a;
+  }
+  
+  .card {
+    padding: 10px 20px;
+    text-align: start;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .auth_panel {
+    padding: 20px;
+  }
+  
+  .task_title_view {
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    margin-right: 30px;
+    font-weight: bold;
+  }
+  
+  #app-name {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.8em;
+    color: #e59eaf;
+    font-weight: bold;
+  }
+  
+  .uname {
+    text-align: start;
+    font-size: large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+  }
+  
+  .add-btn {
+    padding: 10px;
+    font-size: medium;
+    max-width: 100px;
+    border: 1px solid #e59eaf;
+    background: #e59eaf;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-btn:hover {
+    background: #d94d73;
+  }
+  
+  #div-search-bar {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  #search-bar {
+    width: 30%;
+    height: 35px;
+    border: 1px solid #e59eaf;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  #search {
+    height: 35px;
+    border: 1px solid #e59eaf;
+    background: #e59eaf;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  #search:hover {
+    background: #d94d73;
+  }
+  
+  #logout-btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #e59eaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #logout-btn:hover {
+    background-color: #d94d73;
+  }
+  
+  #error-msg {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #app-name-home {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .task_display {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    #search-bar {
+      width: 80%;
+    }
+  
+    #app-name {
+      margin-top: 10px;
+    }
+  }
+  
